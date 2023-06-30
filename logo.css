@@ -50,7 +50,7 @@
     border-radius: 4px;
     font-size: 16px;
     background-color: white;
-    background-image:url(images/logos/icon/searchicon.png);
+    background-image:url(searchicon.png);
     background-size: 20px 20px;
     background-position: 10px 10px; 
     background-repeat: no-repeat;
@@ -243,7 +243,7 @@
 
 .body{
   background-color: white;
-  background-image: url(images/background.jpg);
+  background-image: url(background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;  
@@ -728,7 +728,7 @@
   
 }
 .o-body{
-  background-image: url(images/background.jpg);
+  background-image: url(background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;  }
