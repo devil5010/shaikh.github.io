@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="icon" type="image/x-icon" href="images/logos/icon/favicon.ico">
+
+        <title>Order Online</title>
+        <link rel="stylesheet" href="logo.css">
+        <script src="logo.js"></script>
+
+                <!--meta data for icons-->
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/gotham.css">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=EB+Garamond:ital,wght@0,400;1,700&family=Pacifico&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=EB+Garamond:ital,wght@0,400;1,700&family=Pacifico&display=swap" rel="stylesheet">
+    </head>
+
+<body class="o-body">   
+    <!-- <<<<<<<<<<<<<<<<<<<<<<<<<<< NAV BAR>>>>>>>>>>>>>>>>>>>>>>>>>>>>>. -->
+    <!--navigation bar-->
+
+        <div class="navbar">
+
+            <!--icons-->
+
+            <div class="navbar-left">
+            
+
+            <button onclick="toggleMenu()" class="button">
+            <i id="fa-bars" class="fa fa-bars" aria-hidden="true"></i>       <!--menu-->
+            </button>
+                        
+                <div class="menu-content" id="menuContent">
+                <ul>
+                    <li style="font-family: pacifico;">Cappuccino</li>
+                    <li id="odd">Espresso</li>
+                    <li id="even">Latte</li>
+                    <li id="odd">Americano</li>
+                    <li id="even">Caffè mocha</li>
+                    <li id="odd">Caffè macchiato</li>
+                    <li id="even">Flat white</li>
+                    <li id="odd">Iced coffee</li>
+                    <li id="even">Irish coffee</li>
+                    <li id="odd">Cold brew</li>
+                </ul>
+                </div>
+                    
+            </div>
+            <!-- //////////////////////////////////////////wrapper............////////// -->
+
+                <nav class="order-online" style="margin-top: 20px;">
+                <div>
+                    <a class="on" href="order_online.html">Order Online</a>
+                    <a class="on">About Us</a>
+                    <a class="on" href="404.html" target="_self">E-shop</a>
+                </div>
+                </nav>
+
+        <!--//////////////////////////Logo////////////-->
+
+
+        <div class="navbar-middle"><a href="logo.html"><img src="images/logos/logo1.png" alt="logo" width="200px" height="200px" ></a></div>
+
+            <div class="navbar-right" id="" >
+
+            <!-- //////////////////////////////////// Search bar////////////// -->
+            
+            <input type="text" id="search-bar" class="search-bar" placeholder="Search">
+
+
+
+            <!--user button-->
+            <div>
+            <button onclick="toggleButton()" class="user-button" id="userButton">
+                <i id="fa-user" class="fa fa-user"  ></i>
+            </button>
+            
+            <!--login menu-->
+
+            <div class="login-menu" id="userPage">
+            
+                <form >
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username">
+                <br>
+                <label class="pass" for="password">Password:</label>
+                <input type="text" class="password" id="password" name="password">
+                <br>
+                <button class="sign-in-button" type="button" value="Sign-in">Sign In</button>
+                <button class="sign-up-button" type="button" value="Sign-up" onclick="window.open('sign_up.html').style.display='block'">Sign Up</button>
+                <!-- <button class="g-button"><i class="fa fa-google" id="google" aria-hidden="true"></i></button> -->
+                </form>
+            </div>
+            </div>
+        <!--notification button-->
+            <div>
+            
+            <button onclick="toggleNotify()" class="bell-button" id="bellButton"><i id="fa-bell" class="fa fa-bell" aria-hidden="true" ></i></button>
+                <div class="notify" id="notify">
+                    <p style="justify-items: center;">You don't have any notification</p> 
+                </div>
+            
+            </div>  
+
+        <!--setting button-->
+            <div>
+            <button class="setting-button" id="settingButton"> <i id="fa-setting" class="fa fa-cog" aria-hidden="true" ></i></button>
+            </div>
+
+            </div>
+
+
+        </div>
+        <!--End of navigation bar-->
+
+
+            <section class="section">   
+
+                <div class="container1">
+
+                    <div class="image-container">
+                        <img class="img1" alt="image" src="images/Cappuccino.jpg">
+                    </div>
+
+                    <div class="info1">
+                        <h3>Cappuccino</h3>
+                        <br>
+                        <a><button class="buy-button" type="button">Order</button></a>
+                        <a><button class="buy-button" type="button">add to cart</button></a>
+                        <br>
+                        <br>
+                        <h4>₹220</h4>
+                        <br>
+                        <p>Everybody's go-to drink - the classic Cappuccino. A foamy drink made with our house-blend espresso and steamed milk.</p>
+
+                    </div>
+
+                    <div class="image-container">
+                        <img class="img1" alt="image" src="images/esspreso.jpg">
+                    </div>
+
+                    <div class="info1">
+                        <h3>Esspreso</h3>
+                        <br>
+                        <a><button class="buy-button" type="button">Order</button></a>
+                        <a><button class="buy-button" type="button">add to cart</button></a>
+                        <br><br>
+                        <h4>₹150</h4>
+                        <br>
+                        <p>A coffee enthusiast's go-to drink. Double ristretto shot of espresso - a concentrated coffee brewed under intense pressure and hot water.</p>
+                    </div>
+                </div>
+
+
+                <div class="container1">
+
+                    <div class="image-container">
+                        <img class="img1" alt="image" src="images/latte.jpg">
+                    </div>
+
+                    <div class="info1">
+                        <h3>Latte</h3>
+                        <br>
+                        <a><button class="buy-button" type="button">Order</button></a>
+                        <a><button class="buy-button" type="button">add to cart</button></a>
+                        <br><br>
+                        <h4>₹220</h4>
+                        <br>
+                        <p>The all-time favourite Latte. A balanced and creamy drink made with our house-blend espresso and steamed milk</p>
+                    </div>
+
+                    <div class="image-container">
+                        <img class="img1" alt="image" src="images/feliphe-schiarolli-SQV-YPNFrx8-unsplash.jpg">
+                    </div>
+
+                    <div class="info1">
+                        <h3>Americano</h3>
+                        <br>
+                        <a><button class="buy-button" type="button">Order</button></a>
+                        <a><button class="buy-button" type="button">add to cart</button></a>
+                        <br><br>
+                        <h4>₹180</h4>
+                        <br>
+                        <p>Caffe Americano. Espresso diluted with hot water to give it a distinctively strong & rich flavour.</p>
+                    </div>
+                </div>
+
+                <div class="container1">
+
+                    <div class="image-container">
+                        <img class="img1" alt="image" src="images/coffee mocha.jpg">
+                    </div>
+
+                    <div class="info1">
+                        <h3>Caffè mocha</h3>
+                        <br>
+                        <a><button class="buy-button" type="button">Order</button></a>
+                        <a><button class="buy-button" type="button">add to cart</button></a>
+                        <br><br>
+                        <h4>₹290 </h4>
+                        <br>
+                        <p>A comfort drink with a caffeine kick. Iteeha's signature hot chocolate with our house-blend espresso.</p>
+                    </div>
+
+                    <div class="image-container">
+                        <img class="img1" alt="image" src="images/Caffe macchiato.jpg">
+                    </div>
+
+                    <div class="info1">
+                        <h3>Caffè macchiato</h3>
+                        <br>
+                        <a><button class="buy-button" type="button">Order</button></a>
+                        <a><button class="buy-button" type="button">add to cart</button></a>
+                        <br><br>
+                        <h4>₹150</h4>
+                        <br>
+                        <p>an espresso coffee drink with a small amount of milk, usually foamed</p>                    
+                    </div>
+                </div>
+
+                <div class="container1">
+
+                    <div class="image-container">
+                        <img class="img1" alt="image" src="images/flat white.jpg">
+                    </div>
+
+                    <div class="info1">
+                        <h3>Flat white</h3>
+                        <br>
+                        <a><button class="buy-button" type="button">Order</button></a>
+                        <a><button class="buy-button" type="button">add to cart</button></a>
+                        <br><br>
+                        <h4>₹220</h4>
+                        <br>
+                        <p>A milky yet strong drink made from our house-blend espresso, steamed milk and a thin layer of microfoam</p> 
+                    </div>
+
+                    <div class="image-container">
+                        <img class="img1" alt="image" src="images/Iced coffee.jpg">
+                    </div>
+
+                    <div class="info1">
+                        <h3>Iced coffee</h3>
+                        <br>
+                        <a><button class="buy-button" type="button">Order</button></a>
+                        <a><button class="buy-button" type="button">add to cart</button></a>
+                        <br><br>
+                        <h4>₹250</h4>
+                        <br>
+                        <p>Iteeha's house-blend espresso shaken with milk and ice, sweetened with jaggery syrup</p>                    
+                    </div>
+                </div>
+
+                <div class="container1">
+
+                    <div class="image-container">
+                        <img class="img1" alt="image" src="images/Irish coffee.jpg">
+                    </div>
+
+                    <div class="info1">
+                        <h3>Irish coffee</h3>
+                        <br>
+                        <a><button class="buy-button" type="button">Order</button></a>
+                        <a><button class="buy-button" type="button">add to cart</button></a>
+                        <br><br>
+                        <h4>₹250</h4>
+                        <br>
+                        <p>If you just can’t decide on your end-of-the-night drink, why not have an Irish coffee for the best of both worlds?</p>                    
+                    </div>
+
+                    <div class="image-container">
+                        <img class="img1" alt="image" src="images/Cold brew.jpg">
+                    </div>
+
+                    <div class="info1">
+                        <h3>Cold brew</h3>
+                        <br>
+                        <a><button class="buy-button" type="button">Order</button></a>
+                        <a><button class="buy-button" type="button">add to cart</button></a>
+                        <br><br>
+                        <h4>₹220</h4>
+                        <br>
+                        <p>A smooth black coffee with a nutty and caramel-like finish, extracted for 20 hours</p>
+                    </div>
+                </div>
+
+                
+            </section>
+
+    </body>
+</html>

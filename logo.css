@@ -1,0 +1,747 @@
+*{margin: 0; padding : 0;}
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-color: black;
+    padding: left 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+  }
+  
+  .navbar-left {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+  }
+  
+  .navbar-right {
+    display: flex;
+    align-items: center;
+    z-index: 2;
+  }
+  
+
+  .notification-icon {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: gray;
+    margin: 0 5px;
+  }
+
+
+  /*//////////////////////Search Bar////////////////////*/
+
+ 
+  .search-bar[type=text] {
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image:url(images/logos/icon/searchicon.png);
+    background-size: 20px 20px;
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    transition: width 0.4s ease-in-out;
+  }
+  
+  .search-bar[type=text]:focus {
+    width: 100%;
+  }
+  
+  
+  /* /////////////////////////User Icon //////////////////////////*/
+.user-button{
+  background-color:  black;
+  
+  padding: 6px;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+}
+.user-page{
+  display: none;
+  position: absolute;
+  background-color: #333;  /* Dark background color */
+  color: white; /* Light text color */;
+  width: 200px;
+  padding: 10px;
+  right : 0;
+  top: 100%;
+  transform: translateY(0);
+  border-radius: 5px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Box shadow for glass effect */
+  text-decoration: none;
+  font-family:Arial, Helvetica, sans-serif
+}
+
+.user-page ul{
+  list-style-type: none;
+  margin:0%;
+   
+
+}
+
+#fa-user{
+  margin-right: 9px; /* Move the icon 2 pixels to the right */
+  font-size:27px;
+  color: white;
+  margin-left: 20px;
+
+  
+}
+
+
+ /*////////////////////////   notification icon ///////////////////////////*/
+#fa-bell{
+  border-radius: 5px;
+  font-size: 24px;
+  color: white;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-left: 0;
+}
+
+.bell-button{
+  background-color:  black;
+  color: #333;
+  /* padding:2px;
+  margin: 8px; */
+  border: none;
+  cursor: pointer;
+  transform: translateY(0); 
+ 
+}
+
+@keyframes bellRotate{
+  from{
+    transform: rotateY(0deg);
+  }
+  to{
+    transform: rotateY(360deg);
+  }
+}
+
+
+ 
+ /* //////////////////////////////////////// notification menu ///////////////// */
+.notify{
+  display: none;
+  position: absolute;
+  justify-content: center;
+
+  background-color: none;
+  margin: 3px 0px 3px 0px;
+  width: 100%;
+  color:#dc4348;
+  text-shadow: 0px 0px 5px black;
+
+  color: white; /* Light text color */;
+  width: 30%;
+  height: 30%;
+  padding: 70px 0;
+  right : 0;
+  top: 100%;
+  transform: translateY(0);
+  border-radius: 20px;
+  box-shadow: 0 0 20px black ;  /* Box shadow for glass effect */
+  text-decoration: none;
+  font-family: sans-serif;
+  margin-top: 10px;
+  margin-right: 10px;
+  /* font-family: pacifico; */
+  text-align: center;
+  font-style: italic;
+  
+  
+}
+
+
+
+ /* ///////////////////////////////////// setting icon////////////////////////// */
+
+ #fa-setting{
+  padding: 3px;
+  margin-right: 6px;
+  font-size: 24px;
+  color: white;
+  
+ }
+
+@keyframes buttonRotate{
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+
+ #fa-setting:hover{
+
+  animation-name: buttonRotate;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+ }
+
+ .setting-button{
+  background-color:  black;
+  color: #333;
+  padding: 6px;
+  border: none;
+  cursor: pointer;
+  
+ }
+
+  /*  menu icon */
+.button{
+  background-color:  black;
+  color: #333;
+  padding: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+
+      /*////////////////////////////////////////logo///////////////////////////////*/
+      .navbar-middle{
+        color: black;
+        /* box-shadow: 0 0 10px red; */
+        position: fixed;
+        display: flex;
+        margin-left: 40%;
+        margin-right: 40%;
+        height: auto;
+        cursor: pointer;
+
+
+
+      }
+
+
+#fa-bars{
+  margin-left: 6px;
+  font-size: 24px;
+  color: white;
+}
+
+
+/* /////////////////////////background image //////////////////////////////// */
+
+.body{
+  background-color: white;
+  background-image: url(images/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+}
+
+/*///////////////////////////////// navigation menu ////////////////////////////////////////////*/
+
+.menu-content{
+  
+  display: none;
+  justify-content: center;
+  position: absolute; 
+  background-color: none; /* Dark background color */
+  color: black; /* Light text color */;
+  width: 200px;
+  height: auto;
+  padding: 0px;
+  margin-left: 5px;
+  margin-top: 5px;
+  left: 0;
+  top: 100%;
+  transform: translateY(0);
+  border-radius: 5px;
+  box-shadow: 0 0 20px black; /* Box shadow for glass effect */
+  text-decoration: none;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+.menu-content li{
+  padding: 10px 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  font-family: pacifico;
+  background-color: none;
+  margin: 3px 0px 3px 0px;
+  width: 100%;
+  color:#dc4348;
+  text-shadow: 0px 0px 5px black;
+}
+
+/* #odd{
+  background-color: none ;
+  color: #dc4348;
+  box-shadow: 0 0 10px black;
+} */
+.menu-content ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+/*///////////////////////////////////////login menu /////////////////////////*/
+
+
+.login-menu {
+  display: none;
+  position: absolute;
+
+  background-color: none;
+  margin: 3px 0px 3px 0px;
+  width: 100%;
+  color:#dc4348;
+  text-shadow: 0px 0px 5px black;
+
+  box-shadow: 0px 0px 20px black;
+  margin-top: 5px;
+  margin-right: 5px;
+  color:#dc4348;
+  padding: 20px;
+  top: 100%;
+  right: 0;
+  width: 30%;
+  height:max-content;
+  border-radius: 20px;
+  justify-content: center;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.login-menu.visible {
+  display: block;
+}
+#username[type=text] {
+  width: 330px;
+  box-sizing: border-box;
+  border: 2px solid #dc4348;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  
+  background-position: 10px 10px; 
+  margin: 10px 10px;
+  padding: 12px 20px 12px 2px;
+}
+/* #username[type=text]:focus{
+  width: 100%;
+} */
+
+.password[type=text] {
+  width: 330px;
+  box-sizing: border-box;
+  border: 2px solid #dc4348;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  margin: 10px 10px;
+  background-position: 10px 10px; 
+  
+  padding: 12px 20px 12px 2px;
+  
+}
+/* .password[type=text]:focus{
+  width: 430px;
+} */
+
+
+
+.sign-in-button{
+  background-color: #dc4348;
+  color: white;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 13px;
+  cursor: pointer;
+  border-radius: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.sign-in-button:hover {
+  background-color: green;
+}
+
+.sign-up-button{
+  background-color: #dc4348;
+  color: white;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.sign-up-button:hover {
+  background-color: green;
+}
+/* ////////////////////////////////loading./////////////? */
+.loading{
+    width: auto;
+    margin-top: 80px;
+    align-content: center;
+}
+.loading-image{
+  width: auto;
+  height: 500px;
+  align-self: center;
+  position: relative;
+}
+
+
+/* /////////////////////////////// / Slider / ////////////  */
+.content {
+ width: 100%;
+ margin-top: 80px;
+}
+
+
+.images{
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+}
+
+
+
+.whats-new::after{
+  content: "";
+  clear: both;
+  display: table;
+  position: relative;
+  /* height: 500px; */
+  width: auto;
+  background-color: white;
+  z-index: 3;
+}
+.column {
+  float: left;
+}
+
+.cup-gif{
+  height: 500px;
+  width: 506.1px;
+}
+
+/* ////////////////////////button//////////////// */
+
+.whats-new .btn{
+  position: absolute;
+  top: 145%;
+  left: 16%;
+  transform: translate(-50%, -50%); 
+  -ms-transform: translate(-50%, -50%);
+  background-color: lightcoral;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  
+}
+
+.whats-new .btn:hover {
+  background-color: green;
+}
+
+.whats-new .btn2{
+  position: absolute;
+  top: 145%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: lightcoral;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  
+}
+
+.whats-new .btn2:hover {
+  background-color: green;
+}
+
+
+.whats-new .btn3{
+  position: absolute;
+  top: 145%;
+  left: 85%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: lightcoral;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  
+}
+
+.whats-new .btn3:hover {
+  background-color: green;
+}
+
+
+/* ////////////////////////history/////////////////// */
+
+.his{
+  top: 200%;
+  align-items: center;
+  height: 400px;
+  width: auto;
+  justify-content: center;
+  display: flex;
+}
+
+.history{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.his .btn4{
+  position: absolute;
+  top: 206%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  /* background-color: #555; */
+  background-color: lightcoral;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  
+}
+
+.his .btn4:hover {
+  background-color: green;
+}
+/* //////////////////////////////////////////////////////////////////
+ */
+
+
+
+
+ /* ///////////////order online nav /////////////////// */
+
+ .order-online{
+  background-color: none;
+  height: 40px;
+  width: 400px;
+  margin-right: 300px;
+  margin-left: -300px;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  padding: 15px;
+  font-size: 12px;
+  color:#dc4348 ;
+  cursor: pointer;
+  z-index: 2;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+ }
+
+ .order-online .on {
+      margin: 10px;
+      text-decoration: none;
+      color:#dc4348
+ }
+
+
+
+
+ /* ////////////////////////ERORR //////////// */
+
+ .error{
+  color: #dc4348;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ }
+
+
+
+ /* /////////////////////footer>>>>>>>>>>>>>>>>>>>>> */
+
+ .footer{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 0px;
+  background-color: white;
+  height: 200px;
+  width: auto;
+  margin-top: 20px;
+  z-index: 2;
+ }
+
+ .contact{
+  background-color: white;
+  height: 200px;
+  width: auto;
+  font-family: sans-serif;
+  justify-content: center;
+  align-content: center;
+  
+  text-align: left;
+  padding: 5px;
+  color: #dc4348;
+  
+ }
+
+ .contact-heading{
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  justify-content: center;
+  align-content: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  padding: 5px;
+  color: #dc4348;
+  display: flex;
+  /* align-items: center; */
+  gap: 10px;
+ }
+
+ .social-media{
+  background-color: yellow;
+  z-index: 2;
+  height: 200px;
+  width: auto;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  padding: 5px;
+  
+ }
+
+ .social-media-icons{
+  display: flex;
+  gap: 10px;
+  padding: 5px;
+  align-items: center; 
+  margin-top: 30px;
+  justify-content: center;
+}
+
+ .blog{
+  background-color: skyblue;
+  z-index: 2;
+  height: 200px;
+  width: auto;  
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+ }
+
+
+ /* <<<<<<<<<<<<<<<<<<<<<<<<<   ORDER ONLINE PAGE >>>>>>>>>>>>>>>>>>>>>>>>> */
+
+ .container1{
+  display: flex;
+  gap: 30px;
+  margin-top: 100px;
+ }
+
+ .img1{
+  height: 300px;
+  width: auto;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 0px 0px 10px 5px;
+ }
+
+.section{
+  margin: 125px 50px 50px 50px;
+  justify-content: center;
+  align-content: center;
+  background-color: rgba(141, 141, 141, 0.303);
+  box-shadow: 0px 0px 20px 10px black;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.info1{
+  height: 300px;
+  width: 300px;
+  /* background-color: red; */
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
+  margin-top: 20px;
+  color: white;
+  
+}
+.o-body{
+  background-image: url(images/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;  }
+
+.buy-button{
+  background-color: #dc4348;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 16px
+}

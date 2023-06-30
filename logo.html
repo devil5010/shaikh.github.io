@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+      <link rel="icon" type="image/x-icon" href="images/logos/icon/favicon.ico">
+        <title>The Coffee Cafe</title>
+        
+        <link rel="stylesheet" href="logo.css">
+        <script src="logo.js"></script>
+            <!--meta data for icons-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/gotham.css">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=EB+Garamond:ital,wght@0,400;1,700&family=Pacifico&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=EB+Garamond:ital,wght@0,400;1,700&family=Pacifico&display=swap" rel="stylesheet">
+      
+
+    </head>
+
+  <body class="body">
+
+    <!--navigation bar-->
+
+     <div class="navbar">
+
+      <!--icons-->
+
+      <div class="navbar-left">
+        
+
+        <button onclick="toggleMenu()" class="button">
+         <i id="fa-bars" class="fa fa-bars" aria-hidden="true"></i>       <!--menu-->
+        </button>
+                   
+          <div class="menu-content" id="menuContent">
+            <ul>
+              <li style="font-family: pacifico;">Cappuccino</li>
+              <li id="odd">Espresso</li>
+              <li id="even">Latte</li>
+              <li id="odd">Americano</li>
+              <li id="even">Caffè mocha</li>
+              <li id="odd">Caffè macchiato</li>
+              <li id="even">Flat white</li>
+              <li id="odd">Iced coffee</li>
+              <li id="even">Irish coffee</li>
+              <li id="odd">Cold brew</li>
+            </ul>
+          </div>
+                
+      </div>
+      <!-- //////////////////////////////////////////wrapper............////////// -->
+
+      <nav class="order-online">
+        <div>
+          <a class="on" href="order_online.html">Order Online</a>
+          <a class="on">About Us</a>
+          <a class="on" href="404.html" target="_self">E-shop</a>
+      </div>
+      </nav>
+
+  <!--//////////////////////////Logo////////////-->
+
+
+    <div class="navbar-middle"><a href="logo.html"><img src="images/logos/logo1.png" alt="logo" width="200px" height="200px" ></a></div>
+
+      <div class="navbar-right" id="" >
+
+         <!-- //////////////////////////////////// Search bar////////////// -->
+        
+        <input type="text" id="search-bar" class="search-bar" placeholder="Search">
+
+
+
+        <!--user button-->
+       <div>
+        <button onclick="toggleButton()" class="user-button" id="userButton">
+          <i id="fa-user" class="fa fa-user"  ></i>
+         </button>
+         
+         <!--login menu-->
+
+         <div class="login-menu" id="userPage">
+         
+          <form >
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username">
+            <br>
+            <label class="pass" for="password">Password:</label>
+            <input type="text" class="password" id="password" name="password">
+            <br>
+            <button class="sign-in-button" type="button" value="Sign-in">Sign In</button>
+            <button class="sign-up-button" type="button" value="Sign-up" onclick="window.open('sign_up.html').style.display='block'">Sign Up</button>
+            <!-- <button class="g-button"><i class="fa fa-google" id="google" aria-hidden="true"></i></button> -->
+          </form>
+         </div>
+       </div>
+ <!--notification button-->
+        <div>
+      
+         <button onclick="toggleNotify()" class="bell-button" id="bellButton"><i id="fa-bell" class="fa fa-bell" aria-hidden="true" ></i></button>
+            <div class="notify" id="notify">
+              <p style="justify-items: center;">You don't have any notification</p> 
+           </div>
+         
+        </div>  
+
+ <!--setting button-->
+       <div>
+        <button class="setting-button" id="settingButton"> <i id="fa-setting" class="fa fa-cog" aria-hidden="true" ></i></button>
+       </div>
+
+      </div>
+
+
+    </div>
+<!--End of navigation bar-->
+
+
+
+
+                    
+<!---Slider-->
+       
+              
+              <style>
+              * {box-sizing: border-box;}
+              body {font-family: Verdana, sans-serif;}
+              .mySlides {display: none;}
+              img {vertical-align: middle;}
+
+              /* Slideshow container */
+              .slideshow-container {
+                max-width: auto;
+                height: 550px;
+                position: relative;
+                margin-top: 80px;
+                z-index: -1;
+              }
+
+            
+              
+              .active {
+                background-color: #717171;
+              }
+
+              /* Fading animation */
+              .fade {
+                animation-name: fade;
+                animation-duration: 2s;
+              }
+
+              @keyframes fade {
+                from {opacity: .4} 
+                to {opacity: 1}
+              }
+
+              </style>
+
+              <div class="slideshow-container">
+
+              <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="images/image6.jpg" style="width:100%">
+                <!-- <div class="text">Caption Text</div> -->
+              </div>
+
+              <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="images/pexels-lisa-fotios-907142.jpg" style="width:100%">
+                <!-- <div class="text">Caption Two</div> -->
+              </div>
+
+              <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="images/image4.jpg" style="width:100%">
+                <!-- <div class="text">Caption Three</div> -->
+              </div>
+
+              </div>
+              <br>
+
+              <div style="text-align:center">
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+              </div>
+
+              <script>
+              let slideIndex = 0;
+              showSlides();
+
+              function showSlides() {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                let dots = document.getElementsByClassName("dot");
+                for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";  
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) {slideIndex = 1}    
+                for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";  
+                dots[slideIndex-1].className += " active";
+                setTimeout(showSlides, 2000); // Change image every 2 seconds
+              }
+              </script>
+
+              
+      
+                  <!-- /////////end of slider///////// -->
+
+
+                  <!-- //////////whats-new and history buttons////////// -->
+     <div class="whats-new">
+        <div class="column"><img src="images/logos/icon/New-Open-copy_0.gif" class="cup-gif">
+          <button class="btn" onclick="window.open('404.html', '_blank');">Whats New</button>
+        </div>
+        <div class="column"><img src="images/logos/icon/map-locator.gif" class="cup-gif">
+          <button class="btn2" onclick="window.open('https://www.google.com/maps/search/restaurants/'); _blank ">Find Cafe Near You</button>
+        </div>
+        <div class="column"><img src="images/logos/icon/Shop now gif new.gif" class="cup-gif">
+          <button class="btn3" onclick="window.open('https://www.flipkart.com/cafe-coffee-day-filta-fresh-classic-chicory-blended-pack-2-10-sachets-each-filter/p/itm8bb18fb503e93', '_blank') ;">Shop Now</button>
+        </div>
+    </div>
+                        <!-- /////////////history button//////////// -->
+    <div class="his">
+        <img class="history" src="images/logos/icon/history-text_0_0.png">
+        <button class="btn4" onclick="window.open('https://www.nescafe.com/in/understanding-coffee/coffee-history')">Histoy Of coffee</button>
+
+    </div>
+
+      <!-- <<<<<<<<<<<<<<<<<<<<<<footer>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+    <div class="footer">
+      <div class="contact">
+        <div class="contact-heading">
+          <img src="images/logos/icon/information.png" width="25px" height="25px">
+          <h3>Contact Information</h3>
+        </div>
+        <!-- <p style="margin-top: 20px;">
+          Phone No.: 9561228067<br>
+          Email Address : <a href="mailto: mominshoaib4@gmail.com">mominshoaib4@gmail.com</a><br>
+          Address : Ghrushneswar Chowk, Mantha Road, Jalna HO, Jalna - 431203 (Nr SRPF Jalna)<br>
+
+          </a>
+        </p> -->
+        <address style="margin-top: 20px;">
+          Mobile No. : 9551228067 <br>
+          Email add  : <a href="mailto: mominshoaib4@gmail.com" style="color: #dc4348;">mominshoaib4@gmail.com</a><br>
+          Address    : Ghrushneswar Chowk, Mantha Road, Jalna HO, Jalna - 431203 (Nr SRPF Jalna)
+        </address>
+      </div>
+
+      <div class="social-media">
+        <div class="contact-heading">
+          <img src="images/logos/icon/social-media.png" width="30px" height="30px">
+          <h3>You Can Also Find Us Here</h3>
+         
+        </div>
+        <div class="social-media-icons">
+          <a href="https://www.instagram.com/shoaib.jpeg"> <img src="images/logos/icon/instagram.png" width="40px" height="40px"></a>
+          <a href="https://www.facebook.com/mominshoaib01"> <img src="images/logos/icon/facebook.png" width="40px" height="40px"></a>
+          <a href="https://wa.me/9561228067"> <img src="images/logos/icon/whatsapp.png" width="40px" height="40px"></a>
+          <a href="mailto: mominshoaib4@gmail.com"> <img src="images/logos/icon/gmail.png" width="40px" height="40px"></a>
+          <a href="https://youtube.com/@shoaibjpeg"> <img src="images/logos/icon/youtube.png" width="40px" height="40px"></a>
+          <a href="https://www.linkedin.com/in/shoheb-momin"> <img src="images/logos/icon/linkedin.png" width="40px" height="40px"></a>
+
+        </div>  
+      </div>
+
+      <div class="blog">
+        <div class="contact-heading">
+          <img src="images/logos/icon/feedback.png" width="30px" height="30px">
+          <h3>Give Your Feedback</h3>
+         
+        </div>
+      </div>
+    </div>
+
+      
+     
+
+    
+  </body>
+
+
+</html>
